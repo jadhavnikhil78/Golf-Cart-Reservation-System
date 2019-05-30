@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="WebApplication3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>UNCC Golf Cart Registration!</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #TextArea1 {
+            height: 141px;
+            width: 644px;
+        }
+        .auto-style1 {
+            height: 139px;
+            width: 1134px;
+        }
+        .auto-style2 {
+            height: 140px;
+            width: 273px;
+        }
+        .auto-style3 {
+            width: 662px;
+            height: 136px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="topContent">
+            <p class="auto-style1">&nbsp;<img alt="" src="~/images\UNCCharlotteLogo.gif" runat="server" style="margin-left: 0px;" class="auto-style2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="~/images\golfCart.gif" runat="server" class="auto-style3" /></p>
+        <a href="WebForm2.aspx">Home Page</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Login.aspx">Login</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="CancelRide.aspx">Cancel Ride</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="ChangeBooking.aspx">Change Booking</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+             <a href="GolfCartRegistration.aspx" id="registration">Book a ride</a> 
+
+  
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+</body>
+</html>
